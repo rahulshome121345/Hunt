@@ -1,0 +1,18 @@
+.env
+.env.local
+.env.*.local
+!.env.example
+.engine_status.json
+*.db
+*.db-journal
+test.txt
+__pycache__/
+*.pyc
+
+# Node & Build Outputs
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+.firebase/
+

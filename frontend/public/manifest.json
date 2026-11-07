@@ -1,0 +1,28 @@
+{
+  "name": "Startup Scraper Pro",
+  "short_name": "ScraperPro",
+  "description": "AI-powered startup pain point discovery and market saturation analyzer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business", "utilities"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "scope": "/"
+}

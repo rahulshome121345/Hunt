@@ -1,0 +1,14 @@
+services:
+  - type: cron
+    name: painpoint-scraper-engine
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run_engine.py
+    schedule: "0 0 * * *" # Runs daily at midnight UTC
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
