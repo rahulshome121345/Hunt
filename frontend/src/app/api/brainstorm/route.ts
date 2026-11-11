@@ -93,12 +93,11 @@ export async function POST(req: Request) {
       5. You have access to Google Search tool. If asked for live market data or competitors, search the web dynamically.
     `;
 
-    // 4. Generate Content via Gemini
+    // 4. Generate Content via Gemini (Compatible with Free & Paid Tiers)
     const chat = ai.chats.create({
       model: 'gemini-3.8-flash',
       config: {
         systemInstruction,
-        tools: [{ googleSearch: {} }],
         temperature: 0.7,
       },
       history,

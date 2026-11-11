@@ -75,12 +75,11 @@ export async function POST(req: Request) {
       IMPORTANT: Return ONLY valid JSON array. Do NOT wrap in markdown or backticks.
     `;
 
-    // Generate web-grounded content using Gemini 3.8 Flash with Google Search
+    // Generate content using Gemini 3.8 Flash (Compatible with Free & Paid Tiers)
     const response = await ai.models.generateContent({
       model: 'gemini-3.8-flash',
       contents: promptText,
       config: {
-        tools: [{ googleSearch: {} }],
         temperature: 0.5,
       },
     });
